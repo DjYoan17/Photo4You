@@ -1,5 +1,5 @@
-<?php require_once '.\include\connexionmysql.php'?>
-<?php session_start() ?>
+<?php require_once '.\include\connexionmysql.php';
+session_start(); ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -14,4 +14,3 @@
         <div class="clear"></div>
     </div>
     <?php require_once '.\include\header.php'?>
-
