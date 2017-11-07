@@ -5,7 +5,7 @@ $AfficheFormulaire = TRUE;
 /*mail et motdepasse sont deux variables*/
 if(!empty($_POST['mail']) AND !empty($_POST['motdepasse']))
 {
-    /* Cherche dans si l'utilisateur qui veut se connecter est bien dans la table utilisateur */
+    /* Cherche si l'utilisateur qui veut se connecter est bien dans la table utilisateur */
     $req = $db->prepare('SELECT * FROM utilisateur where mdpUtilisateur = :mdpUtilisateur AND mailUtilisateur = :mailUtilisateur');
     $req->bindValue(':mailUtilisateur', $_POST['mail'], PDO::PARAM_STR);
     $req->bindValue(':mdpUtilisateur', $_POST['motdepasse'], PDO::PARAM_STR);

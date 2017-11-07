@@ -9,8 +9,9 @@ session_start(); ?>
 <body>
 <div id="container">
 	<div id="header">
-    	<h1><a href="/">Photo4You</a></h1>
+    	<h1><a href="index.php">Photo4You</a></h1>
         <h2>Des photos pros, pour les pros !</h2>
         <div class="clear"></div>
     </div>
     <?php require_once '.\include\header.php'?>
+
